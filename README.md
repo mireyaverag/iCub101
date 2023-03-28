@@ -34,7 +34,7 @@ Tabla de Contenidos
 
 Linux
 =================
-Linux es el nombre que reciben una serie de sistemas operativos de tipo Unix bajo la licencia GNU GPL (General Public License o Licencia Pública General de GNU) que son su mayoría gratuitos y con todo lo necesario para hacer funcionar un PC, con la peculiaridad de es posible instalar un sistema muy ligero e ir añadiendo todo lo necesario posteriormente o según vaya siendo necesario.
+Linux es el nombre que reciben una serie de sistemas operativos de tipo Unix bajo la licencia GNU GPL (General Public License o Licencia Pública General de GNU) que son en su su mayoría gratuitos y con todo lo necesario para hacer funcionar un PC, con la peculiaridad de es posible instalar un sistema muy ligero e ir añadiendo todo lo necesario posteriormente o según vaya siendo necesario.
 
 Es posible trabajar con YARP en todos los sistemas operativos, pero es muy recomendable instalar Linux ya que fue desarrollado para este. Es posible instalarlo tanto con el uso de una máquina virtual como mediante una partición de disco duro.
 
@@ -61,7 +61,7 @@ Instalar yarp
 =================
 YARP es un paquete de software de código abierto escrito en C++ que se utiliza para interconectar sensores, procesadores y actuadores en el iCub. Para su instalación se utilizará robotology superbuild.
 ## Robotology superbuild
-Este es un repositorio que utiliza CMake y YCM para descargar y compilar automáticamente software desarrollado en la organización de robotology GitHub, como el software intermedio YARP o el software utilizado para ejecutar el robot iCub.
+Este es un repositorio que utiliza CMake e YCM para descargar y compilar automáticamente software desarrollado en la organización de robotology GitHub, como el software intermedio YARP o el software utilizado para ejecutar el robot iCub.
 
 CMake es una familia de herramientas multiplataforma de código abierto diseñada para crear, probar y empaquetar software. Un YCM Superbuild es un proyecto de CMake cuyo único objetivo es descargar y compilar varios otros proyectos. Se puede leer más sobre el concepto de superbuild en la documentación de YCM o en el documento de IRC relacionado.
 1. Instalación git  
@@ -227,8 +227,8 @@ Características por protocolo:
 
 * TCP → Confiable. Garantía de recepción de un mensaje.
 * UDP → Más rápido que TCP pero sin garantías.
-* musticast → Eficiente para transmisión de un mismo mensaje a múltiples objetivos.
-* Shared memory → Usado en conexiones locales (No es necesario intervención de programación para hacer las conexionesr). Usado para monitoreo, es fácil de traducir a texto simple.
+* multicast → Eficiente para transmisión de un mismo mensaje a múltiples objetivos.
+* Shared memory → Usado en conexiones locales (No es necesario intervención de programación para hacer las conexiones). Usado para monitoreo, es fácil de traducir a texto simple.
 
 ### Ejemplo de trabajo
 
@@ -387,7 +387,7 @@ yarp disconnect /summer /read
 yarp connect /summer /read udp
 ```
 
-Lo que setea la  conexión asignada con protocolo ```udp```, y funciona similar para el resto de protocolos.
+Lo que setea la conexión asignada con protocolo ```udp```, y funciona similar para el resto de protocolos.
 
 ### Closer look
 
@@ -420,7 +420,7 @@ Ahora, para saber qué protocolos acepta un puerto, se puede consultar en la ter
 Para la utilización de estos puertos, se utilizan 2 clases, ```yarp::os::RpcClient``` y ```yarp::os::RpcServer```, creando una conexión cliente-servidor.
 
 
-Estos puertos permiten interacción de el código que entregan más información sobre lo que ocurre con el código mientras se está ejecutando.
+Estos puertos permiten una interacción del código que entrega más información sobre lo que ocurre con este mientras se está ejecutando.
 
 Para trabajar con puertos del tipo cliente y del tipo servidor, se tiene este primer ejemplo:
 
@@ -556,7 +556,7 @@ Funcionamiento de server y client:
 [en terminal 2] ./rpc_client /client /server
 ```
 
-* El cliente envía un mensaje y servidor responde.
+* El cliente envía un mensaje y el servidor responde.
 * log.in: Reporta todos los inputs que un puerto está recibiendo, junto con sus respuestas.
 * Se hace una conexión desde servidor a un logging port y setear log.in
 
@@ -653,7 +653,7 @@ La clase ```ResourceFInder``` automáticamente busca el parámetro ```--from``` 
 ./rf_basic --from ../randomMotion/config.ini
 ```
 
-:warning: **NOTA:** Esto se desarrolla asumiendo que se está en la carpeta build.
+:warning: **NOTA:** Esto se desarrolla asumiendo que se está dentro de la carpeta build.
 
 
 Existen casos en que no se sabe exactamente dónde está el archivo ini. Esto ocurre, por ejemplo, cuando se escribe un archivo que ejecuta el módulo y no se sabe la configuración exacta de la máquina. Este caso ocurre, por ejemplo, cuando se escribe scripts para yarpmanager.
@@ -691,7 +691,7 @@ Utilidades:
 
 
 
-Teniendo el ejemplo anterior, podríamos querer tener un nuevo directorio con una configuración distinta. En este caso se tendrá un directorio llamado ```randomMotionSim```, que creamos de la siguiente forma:
+Teniendo el ejemplo anterior, podríamos querer tener un nuevo directorio con una configuración distinta. En este caso se tendrá un directorio llamado ```randomMotionSim```, que creamos de la siguiente forma:j
 
 ```
 mkdir $HOME/.local/share/yarp/contexts/randomMotionSim
@@ -781,7 +781,7 @@ cmake ./
 
 Esto permite chequear si se ha seteado correctamente el entorno de YARP y se han linkeado las librerías correspondientes.
 
-Luego, para compilar y ejecutar se ejecuta lo siguiente en la terminal.
+Luego, se compila y se ejecuta lo siguiente en la terminal.
 
 ```
 make
@@ -967,7 +967,7 @@ Para la calibración de todas las partes del robot, hay un archivo `.xml` espec�
 Hay diferentes tipos de calibración de articulaciones, especificados en los parámetros calibrationType:
 
 - **type 12**: solo se necesita insertar el valor absoluto del encoder en la `posición cero`
-- **type 5**: no es necesario insertar valores se calibra automáticamente (por ejemplo, pronosupinación del brazo)
+- **type 5**: no es necesario insertar valores, se calibra automáticamente (por ejemplo, pronosupinación del brazo)
 - **type 7**: es necesario insertar dos valores, `Vmax` y `Vmin` (por ejemplo, abducción de los dedos y oposición del pulgar)
 - **type 6**: (dedos) es necesario insertar dos valores, `Vmax` y `Vmin`, correspondiente a los dedos cerrados (idealmente 0) y abiertos (idealmente 255)
 
@@ -1226,7 +1226,7 @@ Abrir el [archivo de calibración pierna izquierda](https://github.com/robotolog
 
 <a name="calib-brazosp"></a> 
 ## Calibración precisa de los brazos
-Aqupi se describe cómo corregir errores pequeños en la calibración del iCub. Aplica principalmente a las articulaciones del hombro y del codo (joint0...joint3) pero también puede ser utilizado para las otras articulaciones del brazo.
+Aquí se describe cómo corregir errores pequeños en la calibración del iCub. Aplica principalmente a las articulaciones del hombro y del codo (joint0...joint3) pero también puede ser utilizado para las otras articulaciones del brazo.
 
 :exclamation: **Info** 
     Este procedimiento debe ser hecho después de la calibración del torso.
@@ -1268,7 +1268,7 @@ y se obtendrá la información
 
 ![cameras-calib-1](./img/cameras-calib-1.png)
 
-Ahora, abrir un terminar en el servidor y escribir:
+Ahora, abrir un terminal en el servidor y escribir:
 
 ```xml
   icub@icubsrv:~$ yarpview --name /view0
@@ -1287,7 +1287,7 @@ Hacer todos los pasos de arriba nuevamente para la otra cámara, cambiando el pa
 
 
 ### Calibrando cámaras
-Ahora es necesario asegurarse de que las dos cámaras están perfectamente alineadas entre ellas. Para lograr esto, mostrar una cruz negra al robot a una distancia específica (ver imagen) y ajustar las mámaras hasta que alcancen la correcta alineación.
+Ahora es necesario asegurarse de que las dos cámaras están perfectamente alineadas entre ellas. Para lograr esto, mostrar una cruz negra al robot a una distancia específica (ver imagen) y ajustar las cámaras hasta que alcancen la correcta alineación.
 
 ![cam-3](./img/cameras-calib-3.png)
 
