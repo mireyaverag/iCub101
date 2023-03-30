@@ -21,7 +21,7 @@ Tabla de Contenidos
   	* [Trabajando con puertos en YARP](./iCub.md#Trabajando-con-puertos-en-Yarp)
   	* [Puertos especializados RPC](./iCub.md#puertos-especializados-rpc)
   	* [Clase RFModule](./iCub.md#Clase-RFModule)
-  * [Calibración](./Calibracion.md)
+  * [Calibración](./assets/Calibracion.md)
   	* [Yarprobotinterface](./Calibracion.md#robotinterface)
   	* [Torso](./Calibracion.md#calib-torso)
   	* [Brazos](./Calibracion.md#calib-brazos)
