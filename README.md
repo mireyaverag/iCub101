@@ -13,15 +13,15 @@ Inicialmente, se recomienda mirar la documentación con los [tutoriales del iCub
 
 Tabla de Contenidos
 =================
-  * [Linux](./assets/Linux.md)
-  * [YARP](./assets/Yarp.md)
+  * [Linux](./Linux.md)
+  * [YARP](./Yarp.md)
   	* [Robotology superbuild](#robotology-superbuild)
-  * [Tutoriales](./assets/Tutoriales.md)
-  * [iCub](./assets/iCub.md)
+  * [Tutoriales](./Tutoriales.md)
+  * [iCub](./iCub.md)
   	* [Trabajando con puertos en YARP](#Trabajando-con-puertos-en-Yarp)
   	* [Puertos especializados RPC](#puertos-especializados-rpc)
   	* [Clase RFModule](#Clase-RFModule)
-  * [Calibración](./assets/Calibracion.md)
+  * [Calibración](./Calibracion.md)
   	* [Yarprobotinterface](#robotinterface)
   	* [Torso](#calib-torso)
   	* [Brazos](#calib-brazos)
