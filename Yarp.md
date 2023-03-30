@@ -42,7 +42,7 @@ Para verificar el usuario y correo se ejecuta el siguiente comando:
 ```
 sudo gedit ~/.gitconfig
 ```
-
+<a name="robotology-superbuild"></a> 
 3. Instalación Robotology
 
 Para instalar las herramientas de YARP  y ICUB, lo primero que se debe hacer es clonar el repositorio de robotology
