@@ -9,7 +9,7 @@ Acciones preliminares:
 
 |   |   |
 |---|---|
-|![img-1](./img/img-1.jpg) | ![img-2](./img/img-2.jpg)|
+|![img-1](./Desktop/Repositorio/img/img-1.jpg) | ![img-2](./img/img-2.jpg)|
 
 - En el servidor YARP, correr `yarpmanager` e iniciar `icubsrv` y los clusters `pc104`: 
   
