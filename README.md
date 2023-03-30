@@ -13,7 +13,7 @@ Inicialmente, se recomienda mirar la documentación con los [tutoriales del iCub
 
 Tabla de Contenidos
 =================
-  * [Linux](#instalar-linux)
+  * [Linux](./Linux.md)
   * [YARP](#instalar-yarp)
   	* [Robotology superbuild](#robotology-superbuild)
   * [Tutoriales](#tutoriales)
