@@ -15,7 +15,7 @@ Para visualizarlo de manera más simple, el marco de referencia raíz de la cine
 
 ![img-4](./assets/img-3.jpg)
 
-Seven additional reference frames are defined with respect to this common root reference frame. The reference frames are located as shown in the CAD figure. The x axis is in red. The y axis is in green. The z axis is in blue.
+Siete adicionales marcos de referencia se definen respecto a este marco de referencia común. Los marcos de referencia están localizados como se muestra en la figura CAD. El eje x está en color rojo, el eje y en color verde y el eje z está en color azul.
 
 - Marco de referencia mano izquierda ([ver imagen CAD](./assets/LeftHandCADRefFrame.jpg))
 - Marco de referencia mano derecha ([ver imagen CAD](./assets/RightHandCADRefFrame.jpg))
