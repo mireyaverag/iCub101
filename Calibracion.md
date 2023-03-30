@@ -9,12 +9,12 @@ Acciones preliminares:
 
 |   |   |
 |---|---|
-|![img-1](./assets/img/img-1.jpg) | ![img-2](./assets/img/img-2.jpg)|
+|![img-1](./img/img-1.jpg) | ![img-2](./img/img-2.jpg)|
 
 - En el servidor YARP, correr `yarpmanager` e iniciar `icubsrv` y los clusters `pc104`: 
   
 `icub@icubsrv:~$ yarpmanager`
-![yarpmanager](./assets/img/yarp-manager.png)
+![yarpmanager](./img/yarp-manager.png)
 
 - Conectarse con la cabeza del iCub `icub-head`: 
 
@@ -231,7 +231,7 @@ Hay diferentes tipos de calibración de articulaciones, especificados en los par
 ```
 - En el server hte/laptop correr `yarpmotorgui` para comprobar las lecturas de las articulaciones hechas por el encoder
 
-![yarpmoorgui](./assets/img/yarpmotorgui.png)
+![yarpmoorgui](./img/yarpmotorgui.png)
 
 <a name="calib-cabeza"></a> 
 ### Calibración de cabeza (solo V2)
@@ -326,7 +326,7 @@ Posicionar la muñeca en la `posición cero`:
 
 |   |   |
 |---|---|
-|![img-3](./assets/img/img-3.png) | ![img-4](./assets/img/img-4.png)|
+|![img-3](./img/img-3.png) | ![img-4](./img/img-4.png)|
 
 Abrir el [archivo de calibración brazo izquierdo](https://github.com/robotology/robots-configuration/blob/master/iCubHongKong01/calibrators/left_arm-calib.xml) o [archivo de calibración brazo derecho](https://github.com/robotology/robots-configuration/blob/master/iCubHongKong01/calibrators/right_arm-calib.xml) y poner los valores leídos desde el `yarpmotorgui` para las `articulaciones 5,6` en el parámetro `<param name="calibration1">` dentro de`<group name="CALIBRATION">`.
 
@@ -361,15 +361,15 @@ Con referencia a la tabla a continuación, con ayuda de un destornillador, lea l
 
 |Parte|Articulación#|Motor|Min|Max|
 |---|---|---|---|---|
-|Abducción de los dedos|7|->|![img-5](./assets/img/img-5.jpg) | ![img-6](./assets/img/img-6.jpg)|
-|Abducción del pulgar|8|->|![img-7](./assets/img/img-7.jpg) | ![img-8](./assets/img/img-8.jpg)|
-|Pulgar proximal|9|![img-9](./assets/img/img-9.jpg)|![img-10](./assets/img/img-10.jpg) | ![img-11](./assets/img/img-11.jpg)|
-|Pulgar distal|10|![img-12](./assets/img/img-12.jpg)|![img-13](./assets/img/img-13.jpg) | ![img-14](./assets/img/img-14.jpg)|
-|Dedo índice proximal|11|![img-15](./assets/img/img-15.jpg)|![img-16](./assets/img/img-16.jpg) | ![img-17](./assets/img/img-17.jpg)|
-|Dedo índice distal|12|![img-18](./assets/img/img-18.jpg)|![img-19](./assets/img/img-19.jpg) | ![img-20](./assets/img/img-20.jpg)|
-|Dedo medio proximal|13|![img-21](./assets/img/img-21.jpg)|![img-22](./assets/img/img-22.jpg) | ![img-23](./assets/img/img-23.jpg)|
-|Dedo medio distal|14|![img-24](./assets/img/img-24.jpg)|![img-25](./assets/img/img-25.jpg) | ![img-26](./assets/img/img-26.jpg)|
-|Dedo anular y meñique|15|![img-27](./assets/img/img-27.jpg)|![img-28](./assets/img/img-28.jpg) | ![img-29](./assets/img/img-29.jpg)|
+|Abducción de los dedos|7|->|![img-5](./img/img-5.jpg) | ![img-6](./img/img-6.jpg)|
+|Abducción del pulgar|8|->|![img-7](./img/img-7.jpg) | ![img-8](./img/img-8.jpg)|
+|Pulgar proximal|9|![img-9](./img/img-9.jpg)|![img-10](./img/img-10.jpg) | ![img-11](./img/img-11.jpg)|
+|Pulgar distal|10|![img-12](./img/img-12.jpg)|![img-13](./img/img-13.jpg) | ![img-14](./img/img-14.jpg)|
+|Dedo índice proximal|11|![img-15](./img/img-15.jpg)|![img-16](./img/img-16.jpg) | ![img-17](./img/img-17.jpg)|
+|Dedo índice distal|12|![img-18](./img/img-18.jpg)|![img-19](./img/img-19.jpg) | ![img-20](./img/img-20.jpg)|
+|Dedo medio proximal|13|![img-21](./img/img-21.jpg)|![img-22](./img/img-22.jpg) | ![img-23](./img/img-23.jpg)|
+|Dedo medio distal|14|![img-24](./img/img-24.jpg)|![img-25](./img/img-25.jpg) | ![img-26](./img/img-26.jpg)|
+|Dedo anular y meñique|15|![img-27](./img/img-27.jpg)|![img-28](./img/img-28.jpg) | ![img-29](./img/img-29.jpg)|
 
 
 :warning: **Warning**  
@@ -445,7 +445,7 @@ Poner el iCub  en una postura adecuada y considerar esta configuración como la 
 
 |   |   |   |
 |---|---|---|
-|![fine-1](./assets/img/fine-1.jpg) | ![fine-2](./assets/img/fine-2.jpg)|![fine-3](./assets/img/fine-3.jpg)|
+|![fine-1](./img/fine-1.jpg) | ![fine-2](./img/fine-2.jpg)|![fine-3](./img/fine-3.jpg)|
 
 El onjetivo es insertar los deltas de calibración `<param name="calibrationDelta">` en cada archivo utilizando la fórmula: `Delta = Theta - Theta_Desired`.
 
@@ -453,7 +453,7 @@ El onjetivo es insertar los deltas de calibración `<param name="calibrationDelt
 ## Calibración de los ojos
 El mecanismo de los ojos tiene un total de tres grados de libertad. Ambos ojos pueden inclinarse  (independientemente) y desplazarse (simultáneamente).
 
-![eyes-1](./assets/img/eyes-1.png)
+![eyes-1](./img/eyes-1.png)
 
 Por ende, las tres articulaciones a calibrar son: versión del ojo (movimiento izquierda-derecha), vergencia del ojo (dentro-fuera) e inclinación del ojo (arriba-abajo).
 
@@ -476,7 +476,7 @@ Abrir un terminal en la icub-head y escribir:
 
 y se obtendrá la información
 
-![cameras-calib-1](./assets/img/cameras-calib-1.png)
+![cameras-calib-1](./img/cameras-calib-1.png)
 
 Ahora, abrir un terminal en el servidor y escribir:
 
@@ -491,7 +491,7 @@ Corroborar cuál cámara está funcionando y luego poner el “ID único” en l
 $ROBOT_CODE/robots-configuration/<$YARP_ROBOT_NAME>/camera
 ```
 
-![cameras-calib-2](./assets/img/cameras-calib-2.png)
+![cameras-calib-2](./img/cameras-calib-2.png)
 
 Hacer todos los pasos de arriba nuevamente para la otra cámara, cambiando el parámetro `--d 0` a `--d 1` en el primer comando.
 
@@ -499,9 +499,9 @@ Hacer todos los pasos de arriba nuevamente para la otra cámara, cambiando el pa
 ### Calibrando cámaras
 Ahora es necesario asegurarse de que las dos cámaras están perfectamente alineadas entre ellas. Para lograr esto, mostrar una cruz negra al robot a una distancia específica (ver imagen) y ajustar las cámaras hasta que alcancen la correcta alineación.
 
-![cam-3](./assets/img/cameras-calib-3.png)
+![cam-3](./img/cameras-calib-3.png)
 
-![cam-4](./assets/img/cameras-calib-4.png)
+![cam-4](./img/cameras-calib-4.png)
 
 - Correr `yarprobotinterface` y esperar para la calibración del robot.
 
