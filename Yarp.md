@@ -2,9 +2,14 @@ Instalar yarp
 =================
 YARP es un paquete de software de código abierto escrito en C++ que se utiliza para interconectar sensores, procesadores y actuadores en el iCub. Para su instalación se utilizará robotology superbuild.
 ## Robotology superbuild
-Este es un repositorio que utiliza CMake e YCM para descargar y compilar automáticamente software desarrollado en la organización de robotology GitHub, como el software intermedio YARP o el software utilizado para ejecutar el robot iCub.
+Este es un repositorio que utiliza [CMake](https://cmake.org/) e [YCM](https://github.com/robotology/ycm) para descargar y compilar automáticamente software desarrollado en la organización de robotology GitHub, como el software intermedio YARP o el software utilizado para ejecutar el robot iCub.
 
-CMake es una familia de herramientas multiplataforma de código abierto diseñada para crear, probar y empaquetar software. Un YCM Superbuild es un proyecto de CMake cuyo único objetivo es descargar y compilar varios otros proyectos. Se puede leer más sobre el concepto de superbuild en la documentación de YCM o en el documento de IRC relacionado.
+CMake es una familia de herramientas multiplataforma de código abierto diseñada para crear, probar y empaquetar software. Un [YCM Superbuild](http://robotology.github.io/ycm/gh-pages/git-master/index.html#superbuild) es un proyecto de CMake cuyo único objetivo es descargar y compilar varios otros proyectos. Se puede leer más sobre el concepto de superbuild en la [documentación YCM ](http://robotology.github.io/ycm/gh-pages/latest/index.html) o en el [documento de IRC relacionado](http://lornat75.github.io/papers/2018/domenichelli-irc.pdf).
+
+| Sistema  | Continuous Integration Status |
+|:------:|:------:|
+|  Linux/macOS/Windows  |  ![GitHub Actions Status](https://github.com/robotology/robotology-superbuild/workflows/C++%20CI%20Workflow/badge.svg)     |
+
 1. Instalación git  
 Para esto se espera primero la creación y verificación de una cuenta en GitHub ya que es una herramienta útil, tanto para trabajar con los repositorios de robotology como para otras fuentes útiles.
 Luego de esto, se instala git a través de la terminal con el siguiente comando:

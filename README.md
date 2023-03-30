@@ -14,7 +14,7 @@ Inicialmente, se recomienda mirar la documentación con los [tutoriales del iCub
 Tabla de Contenidos
 =================
   * [Linux](./Linux.md)
-  * [YARP](./Yarp.md)
+  * [Instalación del simulador](./Yarp.md)
   	* [Robotology superbuild](./Yarp.md#robotology-superbuild)
   * [Tutoriales](./Tutoriales.md)
   * [iCub](./iCub.md)

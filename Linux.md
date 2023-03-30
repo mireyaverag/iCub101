@@ -1,6 +1,6 @@
 Linux
 =================
-Linux es el nombre que reciben una serie de sistemas operativos de tipo Unix bajo la licencia GNU GPL (General Public License o Licencia Pública General de GNU) que son en su su mayoría gratuitos y con todo lo necesario para hacer funcionar un PC, con la peculiaridad de es posible instalar un sistema muy ligero e ir añadiendo todo lo necesario posteriormente o según vaya siendo necesario.
+El entorno de simulación del iCub es posible de instalar en 3 sistemas operativos: Linux, macOS y Windows. Aquí se detalla la instalación en Linux; una serie de sistemas operativos de tipo Unix bajo la licencia GNU GPL (General Public License o Licencia Pública General de GNU) que son en su su mayoría gratuitos y con todo lo necesario para hacer funcionar un PC, con la peculiaridad de es posible instalar un sistema muy ligero e ir añadiendo todo lo necesario posteriormente o según vaya siendo necesario.
 
 Es posible trabajar con YARP en todos los sistemas operativos, pero es muy recomendable instalar Linux ya que fue desarrollado para este. Es posible instalarlo tanto con el uso de una máquina virtual como mediante una partición de disco duro.
 
