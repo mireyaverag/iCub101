@@ -1,8 +1,6 @@
 iCub
 =================
 
-El iCub se trabaja nativamente en C++, haciendo uso de las herramientas entregadas por el sistema de control y comunicación de YARP. Por esto, se recomienda leer la [documentación](https://www.yarp.it/latest/index.html) y revisar los [tutoriales](https://robotology.github.io/robotology-documentation/doc/html/icub_tutorials.html) disponibles.
-
 En esta sección se procederá a explicar los tutoriales disponibles como forma de abordarlos de manera sencilla.
 
 ## Trabajando con puertos en YARP

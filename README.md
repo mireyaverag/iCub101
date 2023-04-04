@@ -8,7 +8,7 @@ Fuente: Dirección General de Comunicaciones USM
   <img src="/img/icub.jpg"/>
 </p>
 
-Inicialmente, se recomienda mirar la documentación con los [tutoriales del iCub](#iCub), pasando primero por los de YARP y luego los que correspondan al iCub en específico. Luego de estudiar la documentación disponible, pasar a la instalación de las herramientas de trabajo a utilizar.
+El iCub se trabaja nativamente en C++, haciendo uso de las herramientas entregadas por el sistema de control y comunicación de YARP. Por esto, se recomienda leer la [documentación](https://www.yarp.it/latest/index.html) y revisar los [tutoriales](https://robotology.github.io/robotology-documentation/doc/html/icub_tutorials.html) disponibles.  Luego de estudiar la documentación disponible, pasar a la instalación de las herramientas de trabajo a utilizar.
 
 
 Tabla de Contenidos
