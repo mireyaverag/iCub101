@@ -1,8 +1,6 @@
 Manual de usuario
 ==========================
-iCub es un robot diseñado para investigación colaborativa en desarrollo cognitivo a través de exploración autónoma, interacción social y con su entorno. Su carácter Open Source permite compartir desarrollos con los otros laboratorios de la red, así como reutilizar avances realizados previamente en otro lugar del mundo, y su capacidad de expresar gestos faciales permite además realizar experiencias de interacción con personas, niños, etc.
-
-Fuente: Dirección General de Comunicaciones USM
+iCub es un robot diseñado específicamente para la investigación colaborativa en el desarrollo cognitivo a través de la exploración autónoma, la interacción social y con el entorno. Al ser de código abierto, permite compartir desarrollos con otros laboratorios de la red y reutilizar avances realizados previamente en cualquier parte del mundo. Además, gracias a su capacidad para expresar gestos faciales, es posible realizar experiencias de interacción con personas de todas las edades, incluyendo niños.
 
 <p align="center">
   <img src="/img/icub.jpg"/>
